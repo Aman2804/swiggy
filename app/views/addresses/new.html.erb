@@ -1,0 +1,6 @@
+<%#binding.pry%>
+<%= form_for @address do |add|%>
+  <%= add.label :Address_type %>
+  <%= add.text_area :location %>
+<% end %>
+<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
