@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates	:name,:contact,:city, 					presence: 		 true
 	validates :contact,            		   		 	numericality: true
 	validates :gender,											 	inclusion: {in:["Male","Female"],message: " should select"}
-	has_many :address, as: :addressable
+	has_many :addresses, as: :addressable
   # def before_validation
   # 	binding.pry
   # end
